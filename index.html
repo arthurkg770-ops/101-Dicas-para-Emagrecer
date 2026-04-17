@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="101 Dicas para Emagrecer - Emagreça rápido com método simples">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob: 'unsafe-inline'; img-src https: data:; style-src 'self' https: 'unsafe-inline'; font-src https: data:;">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>101 Dicas Para Emagrecer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#000;color:#fff}
+.container{max-width:1200px;margin:auto;padding:20px}
+
+.header{position:fixed;width:100%;background:rgba(0,0,0,.95);border-bottom:1px solid rgba(212,175,55,.3);z-index:999}
+.header-inner{display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:'Playfair Display',serif;color:#d4af37;font-size:22px}
+
+.hero{
+padding-top:140px;
+background:linear-gradient(rgba(0,0,0,.85),rgba(0,0,0,.96)),url('https://images.unsplash.com/photo-1549575810-8d5f8c1a4c36?q=80&w=1600');
+background-size:cover;background-position:center;text-align:center;padding-bottom:100px}
+
+.title{font-family:'Playfair Display',serif;font-size:56px;color:#d4af37}
+.subtitle{margin-top:15px;opacity:.9;max-width:720px;margin-left:auto;margin-right:auto}
+
+.ebook-img{width:260px;margin:35px auto;display:block;filter:drop-shadow(0 30px 40px rgba(212,175,55,.3))}
+
+.price-box{background:rgba(0,0,0,.85);border:1px solid #d4af37;padding:30px;border-radius:20px;display:inline-block;box-shadow:0 0 50px rgba(212,175,55,.3)}
+.old-price{text-decoration:line-through;opacity:.6}
+.new-price{font-size:50px;color:#d4af37;font-weight:700;margin:5px 0}
+
+.btn{display:inline-block;padding:16px 42px;background:linear-gradient(45deg,#d4af37,#f8e7a0);color:#000;font-weight:700;text-decoration:none;border-radius:8px;margin-top:15px;transition:.3s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 15px 35px rgba(212,175,55,.35)}
+
+.timer{color:#d4af37;margin-top:10px;font-weight:600}
+.security{font-size:13px;opacity:.7;margin-top:8px}
+
+.badges{display:flex;justify-content:center;gap:15px;margin-top:20px;flex-wrap:wrap}
+.badge{border:1px solid rgba(212,175,55,.4);padding:8px 14px;border-radius:6px;font-size:12px}
+
+.section{padding:80px 20px}
+.section-title{text-align:center;font-size:36px;margin-bottom:40px;color:#d4af37;font-family:'Playfair Display',serif}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+.card{background:#050505;padding:25px;border-radius:15px;border:1px solid rgba(212,175,55,.2);transition:.3s}
+.card:hover{border:1px solid #d4af37;transform:translateY(-6px)}
+
+.testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.testimonial{background:#050505;padding:20px;border-radius:15px;border:1px solid rgba(212,175,55,.2)}
+
+.guarantee{text-align:center;border:1px solid #d4af37;padding:40px;border-radius:20px;background:#050505}
+
+.cta-big{text-align:center;padding:80px 20px;background:#020202;border-top:1px solid rgba(212,175,55,.2);border-bottom:1px solid rgba(212,175,55,.2)}
+
+.footer{text-align:center;padding:40px;border-top:1px solid rgba(212,175,55,.2);background:#050505}
+
+.sticky{position:fixed;bottom:15px;left:50%;transform:translateX(-50%);z-index:999}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<div class="container header-inner">
+<div class="logo">101 Dicas para Emagrecer</div>
+<a href="#" class="btn">Comprar</a>
+</div>
+</div>
+
+<section class="hero">
+<div class="container">
+<h1 class="title">101 Dicas Para Emagrecer</h1>
+<p class="subtitle">Método simples para perder peso rápido sem dieta maluca e sem academia</p>
+
+<img class="ebook-img" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=600">
+
+<div class="price-box">
+<div class="old-price">De R$ 49,90</div>
+<div class="new-price">R$ 19,90</div>
+<div class="timer" id="countdown">Promoção termina hoje</div>
+<a href="#" class="btn">COMPRAR AGORA</a>
+<div class="security">🔒 Pagamento seguro • Acesso imediato • Garantia 7 dias</div>
+</div>
+
+<div class="badges">
+<div class="badge">Download imediato</div>
+<div class="badge">Acesso vitalício</div>
+<div class="badge">Método simples</div>
+<div class="badge">Funciona em casa</div>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title">Você vai aprender</h2>
+<div class="grid">
+<div class="card"><h3>🔥 Queimar gordura</h3><p>Dicas rápidas e práticas</p></div>
+<div class="card"><h3>🥗 Alimentação</h3><p>Comer e emagrecer</p></div>
+<div class="card"><h3>🏃 Exercícios</h3><p>Treinos em casa</p></div>
+<div class="card"><h3>🧠 Mentalidade</h3><p>Disciplina e constância</p></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title">Resultados de leitores</h2>
+<div class="testimonials">
+<div class="testimonial">"Perdi 5kg em 3 semanas" — Mariana</div>
+<div class="testimonial">"Muito simples e funciona" — Carlos</div>
+<div class="testimonial">"Sem academia consegui" — Juliana</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="guarantee">
+<h2 class="section-title">Garantia 7 dias</h2>
+<p>Se não gostar devolvemos seu dinheiro</p>
+<a href="#" class="btn">QUERO EMAGRECER</a>
+</div>
+</div>
+</section>
+
+<section class="cta-big">
+<h2 class="section-title">Comece Agora</h2>
+<p>Oferta promocional por tempo limitado</p>
+<a href="#" class="btn">COMPRAR POR R$ 19,90</a>
+</section>
+
+<div class="sticky">
+<a href="#" class="btn">COMPRAR AGORA</a>
+</div>
+
+<div class="footer">
+© 2026 - 101 Dicas para Emagrecer
+<br>
+Produto digital • Acesso imediato • Pagamento seguro
+</div>
+
+<script>
+var end = new Date();
+end.setHours(end.getHours()+4);
+function updateTimer(){
+var now = new Date();
+var diff = end - now;
+var h = Math.floor(diff/1000/60/60);
+var m = Math.floor(diff/1000/60)%60;
+var s = Math.floor(diff/1000)%60;
+document.getElementById("countdown").innerHTML = "Promoção termina em " + h + "h " + m + "m " + s + "s";
+}
+setInterval(updateTimer,1000);
+</script>
+
+</body>
+</html>
